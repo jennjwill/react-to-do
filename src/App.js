@@ -45,7 +45,7 @@ class App extends Component {
       <div className="App">
         <ul>
         { this.state.todos.map( (todo, index) =>
-          <ToDo key={ index } index={index} description={ todo.description } isCompleted={ todo.isCompleted } toggleComplete={ () => this.toggleComplete(index) } deleteListItem={ (index) => this.deleteTodo(index) }/>
+          <ToDo key={ index } index={index} description={ todo.description } isCompleted={ todo.isCompleted } toggleComplete={ () => this.toggleComplete(index) } deleteTodo={ (index) => this.deleteTodo(index) }/>
         )}
         </ul>
         <form onSubmit={ (e) => this.handleSubmit(e) }>
